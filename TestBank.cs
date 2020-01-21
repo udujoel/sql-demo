@@ -8,6 +8,7 @@ namespace sqlTest {
 
             SqlConnection connection = new SqlConnection(conectionString);
             string query = "INSERT INTO customer_table VALUE (@firstname, @lastname,@username, @password)";
+            SqlCommand command = new SqlCommand(query);
         }
         }
     }
